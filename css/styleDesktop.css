@@ -14,6 +14,7 @@ a {
 h1 {
     font-size: 22px;
     font-weight: 700;
+    line-height: 25,83px;
 }
 
 h2 {
@@ -199,6 +200,53 @@ body {
     color: #FFFFFF;
 }
 
+/*********** FILTERBAR ***********/
+
+.filter-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 758px;
+    height: 50px;
+    padding: 0;
+    z-index: 2;
+  }
+  
+  .filter {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 19px;
+    gap: 10px;
+    height: 50px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  
+  .filter-icon i {
+    font-size: 22px;
+    color: #0065FC;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .filter-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .filter:hover {
+    background: #DEEBFF;
+  }
+
 /*********** INFOBAR ***********/
 
 .infobar {
@@ -211,7 +259,7 @@ body {
     height: 24px;
 }
 
-.icon {
+.info-icon {
     position: relative;
     width: 24px;
     height: 24px;
@@ -237,9 +285,211 @@ body {
     left: 9px;
 }
 
-.section-group, 
+/*********** SECTION-GROUP ***********/ 
 
-.section-activites, 
+.section-group {
+    display: flex;
+    gap: 40px;
+}
+
+/*********** MAIN ***********/ 
+
+.offers-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+    width: 100%;
+    max-width: 871px;
+    height: auto;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 15px;
+    gap: 4px;
+    width: calc(33.33% - 20px);
+    height: 207.25px;
+    width: 250.33px;
+    height: 207.25px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+.offer-image {
+    width: 100%;
+    height: 124px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #FFFFFF; 
+    border-radius: 20px 20px 0 0; 
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0; 
+}
+
+.offer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+    gap: 8px;
+    width: 250.33px; 
+    height: 64.25px; 
+}
+
+.offer-title {
+    width: 220.33px; 
+    height: 19px; 
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.offer-price {
+    width: 220.33px; 
+    height: 16px; 
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.stars {
+    display: flex;
+    width: 81px;
+    height: 13.25px; 
+}
+
+.star-full i {
+    color: #0065FC;
+    width: 14,29px;
+    height: 13,25px;
+}
+
+.star-empty i {
+    color: #F2F2F2;
+    width: 14,29px;
+    height: 13,25px;
+}
+
+/*********** ASIDE ***********/ 
+
+.offers-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    width: 429px;
+    height: 614px;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+.aside-header { 
+    position: relative; 
+    width: 369px; 
+    height: 26px;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.icon-chart-line {
+    position: absolute;
+    width: 18px;
+    height: 15.75px;
+    right: -0.13px; 
+    top: calc(50% - 15.75px / 2 - 0.12px); 
+    color: #0065FC;
+}
+
+.aside-offer-card {
+    display: flex;
+    width: 369px;
+    height: 146px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative; 
+}
+
+.aside-offer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 15px; 
+    flex-grow: 1; 
+}
+
+.popular-offers {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0; 
+    gap: 30px; 
+    width: 369px; 
+    height: 498px; 
+}
+
+.aside-container-image {
+    width: 123px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-offer-image {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    max-width: 100%; 
+    object-fit: cover; 
+    background-position: center; 
+    border-width: 5px 0px 5px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+/*********** SECTION-ACTIVITES ***********/
 
 /*********** FOOTER ***********/
 
