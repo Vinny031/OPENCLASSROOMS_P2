@@ -28,7 +28,7 @@
         alt="Logo de l'entreprise Booki écriture bleue"
         class="logo"
       />
-        <nav class="menu">
+        <nav>
           <ul>
             <li><a href="#" class="active">Hébergements</a></li>
             <li><a href="#">Activités</a></li>
@@ -41,17 +41,12 @@
           <p>En plein centre-ville ou en pleine nature</p>
         </section>
         <section class="search-bar">
-          <div class="location-icon">
-              <div class="icon-bg"></div>
-              <div class="icon-vector">
-                <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z" fill="black"/>
-                  </svg>                  
-              </div>
+          <div class="location-icon-container">
+            <i class="fa-solid fa-location-dot location-icon"></i>
           </div>
           <input type="text" class="search-input" placeholder="Marseille, France">
           <button class="search-button">
-              <span>Rechercher</span>
+              Rechercher
           </button>
         </section>
         <section class="filter-bar">
@@ -82,16 +77,16 @@
           </div>
         </section>
         <section class="infobar">
-          <div class="info-icon">
-            <div class="ellipse"></div>
-            <div class="vector">
-              <svg width="4" height="10" viewBox="0 0 4 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.33333 8.68292H2.66667V4.00739C2.66667 3.63815 2.36812 3.33946 2 3.33946H0.666667C0.298542 3.33946 0 3.63815 0 4.00739C0 4.37663 0.298542 4.65654 0.666667 4.65654H1.33333V8.66413H0.666667C0.298542 8.66413 0 8.96283 0 9.33207C0 9.70131 0.298542 10 0.666667 10H3.33333C3.70146 10 4 9.70131 4 9.33207C4 8.96283 3.70208 8.68292 3.33333 8.68292ZM2 2.00359C2.55229 2.00359 3 1.55503 3 1.00169C3 0.44835 2.55208 0 2 0C1.44792 0 1 0.448559 1 1.0019C1 1.55524 1.44771 2.00359 2 2.00359Z" fill="#0065FC"/>
-              </svg>
-            </div>
+          <div class="info-icon-container">
+              <div class="ellipse"></div>
+              <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" width="4" height="10" fill="#0065FC">
+                      <path d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 224 32 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32l32 0 0-192-32 0c-17.7 0-32-14.3-32-32z"/>
+                  </svg>
+              </div>
           </div>           
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </section>
+      </section>
       </section>
       <section class="section-group">
         <main class="offers-main">
@@ -123,7 +118,6 @@
                       </div>
                   </div>
               </div>
-              
               <div class="offer-card">
                 <div class="offer-image">
                   <img src="images/hebergements/febrian-zakaria.jpg" alt="Hôtel chez Amina">
@@ -150,7 +144,6 @@
                     </div>
                   </div>
               </div>
-              
               <div class="offer-card">
                 <div class="offer-image">
                   <img src="images/hebergements/reisetopia.jpg" alt="Hôtel Les mouettes">
@@ -177,7 +170,6 @@
                     </div>
                   </div>
               </div>
-      
               <div class="offer-card">
                 <div class="offer-image">
                   <img src="images/hebergements/annie-spratt.jpg" alt="Hôtel de la mer">
@@ -204,7 +196,6 @@
                     </div>
                   </div>
               </div>
-      
               <div class="offer-card">
                 <div class="offer-image">
                   <img src="images/hebergements/marcus-loke.jpg" alt="Auberge La Canebière">
@@ -231,7 +222,6 @@
                     </div>
                   </div>
               </div>
-      
               <div class="offer-card">
                 <div class="offer-image">
                   <img src="images/hebergements/nicate-lee.jpg" alt="Auberge Le Panier">
@@ -320,34 +310,61 @@
           </div>
       </aside>
       </section>
-      <section class="section-activites">
-        <h2>Section Activités</h2>
-        <p>Détails des activités proposées.</p>
-      </section>
-      <footer>
-        <div class="footer-column">
-          <h2>À propos</h2>
-          <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales</li>
-            <li>Données et confidentialité</li>
-          </ul>
+      <section id="section-activites">
+        <div class="activite-container">
+            <h1>Activités à Marseille</h1>
+            <div class="activite-liste">
+                <div class="activite-card">
+                  <img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port" class="activite-card-image">
+                    <div class="activite-card-contenu">
+                        <h3>Vieux-Port</h3>
+                    </div>
+                </div>
+                <div class="activite-card">
+                  <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègues" class="activite-card-image">
+                    <div class="activite-card-contenu">
+                        <h3>Fort de Pomègues</h3>
+                    </div>
+                </div>
+                <div class="activite-card">
+                  <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques" class="activite-card-image">
+                    <div class="activite-card-contenu">
+                        <h3>Parc national des Calanques</h3>
+                    </div>
+                </div>
+                <div class="activite-card">
+                  <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde" class="activite-card-image">
+                  <div class="activite-card-contenu">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-column">
-          <h2>Nos hébergements</h2>
-          <ul>
-            <li>Charte qualité</li>
-            <li>Proposer votre hôtel</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h2>Assistance</h2>
-          <ul>
-            <li>Centre d’aide</li>
-            <li>Nous contacter</li>
-          </ul>
-        </div>
-      </footer>
+    </section>
+    <footer>
+      <div class="footer-column">
+        <h2>À propos</h2>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Nos hébergements</h2>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Proposer votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Assistance</h2>
+        <ul>
+          <li><a href="#">Centre d’aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
     </div>
   </body>
 </html>
