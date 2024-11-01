@@ -48,8 +48,8 @@ p {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    /* align-items: center;
+    justify-content: flex-start; */
     width: 100%;
     max-width: 1440px;
     height: auto;
@@ -113,7 +113,7 @@ nav a::after {
     transition: width 0.3s;
     width: 0;
     position: absolute;
-    bottom: 209%;
+    bottom: 207%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -124,7 +124,21 @@ nav a:hover::after {
 
 /*********** MAIN ***********/
 
-.info-group {
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    gap: 35px;
+    padding: 0 50px;
+}
+
+/*********** SECTION-INFO ***********/
+
+.section-info {
     width: 1340px;
     height: 281px;
     gap: 35px;
@@ -132,16 +146,16 @@ nav a:hover::after {
     flex-direction: column;
 }
 
-.main-column {
+.info-text{
     padding: 0px;
     gap: 15px;
 }
 
-.main-column p {
+.info-text p {
     list-style: none;
 }
 
-.main-column h1 {
+.info-text h1 {
     margin-bottom: 15px;
 }
 
@@ -488,7 +502,7 @@ nav a:hover::after {
 
 /*********** SECTION-ACTIVITES ***********/
 
-#section-activites {
+.section-activites {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
