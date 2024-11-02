@@ -68,16 +68,16 @@ header {
     padding: 0 50px;
 }
 
-.logo {
+.logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.logo img {
-    max-width: 61.09px;
-    max-height: 19px;
+.logo-container img {
+    width: 61.09px;
+    height: 19px;
 }
 
 .nav-container {
@@ -85,7 +85,6 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 344px;
 }
 
 .header-nav {
@@ -150,7 +149,8 @@ nav a:hover::after {
 /*********** SECTION-INFO ***********/
 
 .section-info {
-    width: 1340px;
+    width: 100%;
+    max-width: 1340px;
     height: 281px;
     gap: 35px;
     display: flex;
@@ -193,18 +193,17 @@ nav a:hover::after {
     align-items: center;
     padding: 0;
     gap: 24px;
-    width: 377px;
+    width: 100%;
+    max-width: 377px;
     height: 49px;
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
-    position: relative;
-
 }
 
 .location-icon-container {
-    position: relative;
-    width: 50px;
+    width: 100%;
+    max-width: 50px;
     height: 49px;
     display: flex;
     align-items: center;
@@ -216,7 +215,8 @@ nav a:hover::after {
 
 .location_icon {
     font-size: 18px;
-    width: 14px;
+    width: 100%;
+    max-width: 14px;
     height: 18px;
     color: black;
 }
@@ -238,7 +238,8 @@ nav a:hover::after {
     align-items: center;
     padding: 15px 16px;
     gap: 10px;
-    width: 132px;
+    width: 100%;
+    max-width: 132px;
     height: 49px;
     background: #0065FC;
     border: 1px solid #0065FC;
@@ -257,7 +258,8 @@ nav a:hover::after {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    width: 758px;
+    width: 100%;
+    max-width: 758px;
     height: 50px;
     padding: 0;
     z-index: 2;
@@ -278,7 +280,8 @@ nav a:hover::after {
   .filter-icon i {
     font-size: 22px;
     color: #0065FC;
-    width: 22px;
+    width: 100%;
+    max-width: 22px;
     height: 22px;
   }
   
@@ -295,7 +298,8 @@ nav a:hover::after {
     justify-content: flex-start;
     padding: 0;
     gap: 10px;
-    width: 924px;
+    width: 100%;
+    max-width: 924px;
     height: 24px;
 }
 
@@ -304,7 +308,8 @@ nav a:hover::after {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 24px;
+    width: 100%;
+    max-width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
@@ -315,7 +320,8 @@ nav a:hover::after {
 
 .info_icon {
     color: #0065FC;
-    width: 4px;
+    width: 100%;
+    max-width: 4px;
     height: 10px;
     font-size: 10px;
 }
@@ -324,6 +330,9 @@ nav a:hover::after {
 
 .section-group {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
 }
 
@@ -357,7 +366,8 @@ nav a:hover::after {
     gap: 4px;
     width: calc(33.33% - 20px);
     height: 207.25px;
-    width: 250.33px;
+    width: 100%;
+    max-width: 250.33px;
     height: 207.25px;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -367,6 +377,7 @@ nav a:hover::after {
 
 .offer-image {
     width: 100%;
+    max-width: 250.33px;
     height: 124px;
     display: flex; 
     justify-content: center; 
@@ -388,7 +399,8 @@ nav a:hover::after {
     align-items: flex-start;
     padding: 0 15px;
     gap: 8px;
-    width: 250.33px; 
+    width: 100%;
+    max-width: 250.33px;
     height: 64.25px; 
 }
 
@@ -404,7 +416,8 @@ nav a:hover::after {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 81px;
+    width: 100%;
+    max-width: 81px;
     height: 13.25px;
     font-size: 14.29px;
 }
@@ -417,7 +430,8 @@ nav a:hover::after {
     align-items: center;
     padding: 30px;
     gap: 30px;
-    width: 429px;
+    width: 100%;
+    max-width: 429px;
     height: 614px;
     background: #F2F2F2;
     border-radius: 15px;
@@ -428,7 +442,8 @@ nav a:hover::after {
     flex-direction: row;
     align-items:flex-start;
     justify-content: space-between;
-    width: 369px; 
+    width: 100%;
+    max-width: 369px;
     height: 26px;
 }
 
@@ -444,7 +459,8 @@ nav a:hover::after {
     align-items: flex-start;
     padding: 0; 
     gap: 30px; 
-    width: 369px; 
+    width: 100%;
+    max-width: 369px;
     height: 498px; 
 }
 
@@ -453,7 +469,8 @@ nav a:hover::after {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 369px;
+    width: 100%;
+    max-width: 369px;
     height: 146px;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -462,7 +479,8 @@ nav a:hover::after {
 }
 
 .aside-container-image {
-    width: 123px;
+    width: 100%;
+    max-width: 123px;
     height: 146px;
     border-radius: 20px 0px 0px 20px;
     display: flex;
@@ -473,7 +491,7 @@ nav a:hover::after {
 .aside-offer-image {
     width: 100%; 
     height: 100%;
-    max-width: 100%; 
+    max-width: 123px; 
     object-fit: cover; 
     background-position: center; 
     border-width: 5px 0px 5px 5px;
@@ -487,7 +505,8 @@ nav a:hover::after {
     flex-direction: column;
     justify-content: space-between; 
     align-items: flex-start;
-    width: 246px;
+    width: 100%;
+    max-width: 246px;
     height: 136px;
     padding: 10px 5px 5px 15px;
     gap: 24px;
@@ -497,7 +516,8 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 226px;
+    width: 100%;
+    max-width: 226px;
     height: 85px;
     gap: 5px;
 }
@@ -506,7 +526,8 @@ nav a:hover::after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 68px;
+    width: 100%;
+    max-width: 68px;
     height: 12px; 
     font-size: 12px;
 }
@@ -519,7 +540,8 @@ nav a:hover::after {
     align-items: flex-start;
     padding: 30px;
     gap: 30px;
-    width: 1340px;
+    width: 100%;
+    max-width: 1340px;
     height: auto;
 }
 
@@ -529,7 +551,8 @@ nav a:hover::after {
     flex-direction: row;
     align-items: flex-start;
     gap: 30px;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 439px;
 }
 
@@ -538,7 +561,8 @@ nav a:hover::after {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 297.5px;
+    width: 100%;
+    max-width: 297.5px;
     height: 439px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
@@ -547,6 +571,7 @@ nav a:hover::after {
 
 .activite-card-image {
     width: 100%;
+    max-width: 297.5px;
     height: 380px;
     object-fit: cover;
 }
@@ -559,6 +584,7 @@ nav a:hover::after {
     padding: 20px 19px;
     background: #FFFFFF;
     width: 100%;
+    max-width: 297.5px;
     height: 59px;
 }
 
@@ -570,7 +596,8 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    width: 1340px; 
+    width: 100%;
+    max-width: 1340px; 
     height: 163px; 
     background-color: #F2F2F2;
 }
@@ -582,7 +609,8 @@ footer {
     justify-content: flex-start;
     padding: 20px;
     gap: 15px;
-    width: 446.67px;
+    width: 100%;
+    max-width: 446.67px;
     height: 163px;
 }
 
