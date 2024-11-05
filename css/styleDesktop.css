@@ -45,6 +45,8 @@ p {
     font-weight: 400;
 }
 
+@media screen and (min-width : 1024px) {
+
 body {
     display: flex;
     flex-direction: column;
@@ -236,6 +238,7 @@ nav a:hover::after {
 .search-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 15px 16px;
     gap: 10px;
     width: 100%;
@@ -249,6 +252,10 @@ nav a:hover::after {
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+.search-button i {
+    display: none;
 }
 
 /*********** FILTERBAR ***********/
@@ -621,4 +628,5 @@ footer {
 
 .footer-column ul li a:hover {
     color: #0065FC
+}
 }
