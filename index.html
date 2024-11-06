@@ -26,7 +26,18 @@
       href="./css/styleDesktop.css"
       @media
       (min-width:
-      1200px)
+      1024px)
+    />
+    <link
+      rel="stylesheet"
+      href="./css/styleTablet.css"
+      @media
+      (max-width:
+      1024px)
+      and
+      (min-width
+      :
+      768px)
     />
     <link
       rel="stylesheet"
@@ -116,7 +127,9 @@
       </section>
       <section class="section-group">
         <div class="offers-main">
-          <h2>Hébergements à Marseille</h2>
+          <div class="offers-title">
+            <h2>Hébergements à Marseille</h2>
+          </div>
           <div class="offers-container">
             <div class="offer-card">
               <div class="offer-image">
@@ -205,6 +218,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="offers-container">
             <div class="offer-card">
               <div class="offer-image">
                 <img
@@ -292,8 +307,8 @@
                 </div>
               </div>
             </div>
-            <h3>Afficher plus</h3>
           </div>
+          <h3>Afficher plus</h3>
         </div>
         <aside class="offers-aside">
           <div class="aside-header">
