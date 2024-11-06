@@ -585,7 +585,7 @@ footer {
     padding: 20px;
     gap: 15px;
     width: 446.67px;
-    height: 163px;
+    height: auto;
 }
 
 .footer-column ul li {
