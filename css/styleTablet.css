@@ -282,6 +282,8 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 50px;
+        width: 924px;
+        height: auto;
     }
     
     /*********** MAIN ***********/ 
@@ -506,6 +508,7 @@
         width: 193.5px;
         height: 200px;
         object-fit: cover;
+        overflow: hidden;
     }
     
     .activite-card-contenu {
@@ -516,7 +519,7 @@
         padding: 20px 19px;
         background: #FFFFFF;
         width: 193.5px;
-        height: auto;
+        height: 70px;
     }
     
     /*********** FOOTER ***********/
@@ -528,7 +531,7 @@
         align-items: flex-start;
         padding: 0px;
         width: 924px; 
-        height: 163px; 
+        height: auto; 
         background-color: #F2F2F2;
     }
     
