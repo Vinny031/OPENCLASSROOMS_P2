@@ -237,6 +237,14 @@ header {
     grid-column: 1 / -1;
   }
   
+  .filter-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 668px;
+    gap: 15px;
+  }
+
   .filter {
     display: inline-flex;
     flex-direction: row;
