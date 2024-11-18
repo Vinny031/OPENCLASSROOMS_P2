@@ -8,7 +8,8 @@ body {
     height: auto;
     padding: 0;
     gap: 30px;
-    margin: 0 auto;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h4 {
@@ -24,7 +25,7 @@ h4 {
 header {
     display: flex; 
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
     height: 115px;
     padding: 0;
@@ -33,10 +34,10 @@ header {
 
 .logo-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 121.09px;
     height: 79px;
 }
 
@@ -47,10 +48,13 @@ header {
 
 .header-nav {
     display: flex;
-    width: 100vw; 
-    max-width: 375px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
     height: 36px;
     padding: 0;
+    margin: 0 auto;
     gap: 15px;
 }
 
@@ -66,6 +70,8 @@ header {
 .header-nav ul li {
     flex: 1;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header-nav a {
@@ -89,8 +95,7 @@ header {
     width: 100%;
     position: absolute;
     bottom: -90%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
 }
 
 .header-nav a:hover::after {
@@ -224,14 +229,17 @@ header {
 
 .filter-bar {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto 1fr; 
-    gap: 20px;
+    gap: 15px;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    padding: 0px; 
-    z-index: 2;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow: hidden;
   }
+
 
   .filter-title {
     grid-column: 1 / -1;
@@ -239,9 +247,10 @@ header {
   
   .filter-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     width: 100%;
-    max-width: 668px;
+    max-width: 100%;
+    padding: 0;
     gap: 15px;
   }
 
@@ -251,7 +260,8 @@ header {
     align-items: center;
     padding: 4px 19px;
     gap: 10px;
-    width: 162.5px;
+    width: 100%;
+    max-width: 162px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -279,7 +289,7 @@ header {
     justify-content: flex-start;
     padding: 0;
     gap: 10px;
-    width: 335px;
+    width: 100%;
     height: auto;
 }
 
@@ -313,7 +323,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 375px;
+    width: 100%;
     height: auto;
     gap: 15px;
 }
@@ -327,7 +337,7 @@ header {
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
-    width: 375px;
+    width: 100%;
     height: auto;
 }
 
@@ -336,7 +346,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 15px;
-    width: 335px;
+    width: 100%;
     height: auto;
 }
 
@@ -354,6 +364,11 @@ header {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden; 
+}
+
+.offer-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .offer-image {
@@ -380,7 +395,7 @@ header {
     align-items: flex-start;
     padding: 0 15px;
     gap: 8px;
-    width: 335px;
+    width: 100%;
     height: auto; 
 }
 
@@ -411,7 +426,7 @@ header {
     align-items: flex-start;
     padding: 30px 20px;
     gap: 15px;
-    width: 375px;
+    width: 100%;
     height: auto;
     background: #F2F2F2;
 }
@@ -421,7 +436,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 335px;
+    width: 100%;
     height: 26px;
 }
 
@@ -437,7 +452,7 @@ header {
     align-items: flex-start;
     padding: 0; 
     gap: 15px; 
-    width: 335px;
+    width: 100%;
     height: auto;
 }
 
@@ -455,6 +470,10 @@ header {
     padding: 5px 0 5px 0;
 }
 
+.aside-offer-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .aside-container-image {
     width: 100%;
     max-width: 123px;
@@ -517,7 +536,7 @@ header {
     align-items: flex-start;
     padding: 30px;
     gap: 30px;
-    width: 375px;
+    width: 100%;
     height: auto;
 }
 
@@ -527,7 +546,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    width: 315px;
+    width: 100%;
     height: auto;
 }
 
@@ -536,11 +555,16 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 315px;
+    width: 100%;
     height: 200px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     overflow: hidden;
+}
+
+.activite-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .activite-card-image {
@@ -569,7 +593,7 @@ footer {
     align-items: flex-start;
     padding: 30px;
     gap: 50px;
-    width: 375px;
+    width: 100%;
     height: 461px; 
     background-color: #F2F2F2;
 }
@@ -580,7 +604,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     gap: 15px;
-    width: 263.67px;
+    width: 100%;
     height: auto;
 }
 
