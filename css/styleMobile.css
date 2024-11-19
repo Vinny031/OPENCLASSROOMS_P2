@@ -3,8 +3,8 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 375px;
     height: auto;
     padding: 0;
     gap: 30px;
@@ -27,6 +27,7 @@ header {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    max-width: 375px;
     height: 115px;
     padding: 0;
 }
