@@ -27,7 +27,7 @@ header {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    max-width: 375px;
+
     height: 115px;
     padding: 0;
 }
@@ -113,7 +113,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 375px;
+
     height: auto;
     gap: 35px;
     padding: 0;
@@ -187,7 +187,6 @@ header {
 .location_icon {
     font-size: 18px;
     width: 100%;
-    max-width: 14px;
     height: 18px;
     color: black;
 }
@@ -226,60 +225,59 @@ header {
     display: none;
 }
 
-/*********** FILTERBAR MODIF ***********/
+/*********** FILTERBAR ***********/
 
 .filter-bar {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto 1fr; 
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 100%;
     height: auto;
-    padding: 0; 
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-
-  .filter-title {
-    grid-column: 1 / -1;
-  }
-  
-  .filter-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    width: 100%;
-    max-width: 100%;
     padding: 0;
-    gap: 15px;
-  }
+    box-sizing: border-box;
+}
 
-  .filter {
-    display: inline-flex;
+.filter-title {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.filter-container {
+    display: contents;
+    width: 100%;
+    height: auto;
+}
+
+.filter {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 19px;
+    padding: 5px 8px;
     gap: 10px;
     width: 100%;
-    max-width: 162px;
-    height: 50px;
+    height: auto;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     box-sizing: border-box;
-  }
-  
-  .filter-icon i {
+}
+
+.filter-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+}
+
+.filter-icon i {
     font-size: 22px;
     color: #0065FC;
-    width: 100%;
-    max-width: 22px;
-    height: 22px;
-  }
-  
-  .filter:hover {
+    display: block; 
+}
+
+.filter:hover {
     background: #DEEBFF;
-  }
+}
 
 /*********** INFOBAR ***********/
 
@@ -355,11 +353,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 0 15px;
+    padding-bottom: 15px;
     gap: 4px;
     width: calc(33.33% - 20px);
-    height: 207.25px;
-    width: 335px;
+    width: 100%;
     height: auto;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -368,14 +365,14 @@ header {
 }
 
 .offer-card:hover {
-    transform: scale(1.10);
+    transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .offer-image {
     width: 100%;
-    max-width: 335px;
     height: 124px;
+    max-height: 60%;
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -387,7 +384,8 @@ header {
     width: 100%;
     height: 100%; 
     object-fit: cover; 
-    border-radius: 20px 20px 0 0; 
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .offer-details {
@@ -397,7 +395,7 @@ header {
     padding: 0 15px;
     gap: 8px;
     width: 100%;
-    height: auto; 
+    height: 64.25px; 
 }
 
 .offer-price {
@@ -463,23 +461,23 @@ header {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 369px;
-    height: 146px;
+    height: auto;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 5px 0 5px 0;
+    padding: 0;
 }
 
 .aside-offer-card:hover {
-    transform: scale(1.10);
+    transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .aside-container-image {
     width: 100%;
-    max-width: 123px;
+    max-width: 33%;
     height: 146px;
     border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,7 +486,6 @@ header {
 .aside-offer-image {
     width: 100%; 
     height: 100%;
-    max-width: 123px; 
     object-fit: cover; 
     background-position: center; 
     border-width: 5px 0px 5px 5px;
@@ -514,7 +511,6 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    max-width: 226px;
     height: 85px;
     gap: 5px;
 }
@@ -564,13 +560,13 @@ header {
 }
 
 .activite-card:hover {
-    transform: scale(1.10);
+    transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .activite-card-image {
-    width: 315px;
-    height: 141px;
+    width: 100%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -581,8 +577,8 @@ header {
     align-items: flex-start;
     padding: 20px 19px;
     background: #FFFFFF;
-    width: 315px;
-    height: 59px;
+    width: 100%;
+    height: auto;
 }
 
 /*********** FOOTER ***********/
@@ -595,7 +591,7 @@ footer {
     padding: 30px;
     gap: 50px;
     width: 100%;
-    height: 461px; 
+    height: auto; 
     background-color: #F2F2F2;
 }
 
