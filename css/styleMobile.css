@@ -174,7 +174,8 @@ header {
 }
 
 .location-icon-container {
-    width: 50px;
+    width: 100%;
+    max-width: 50px;
     height: 49px;
     display: flex;
     align-items: center;
@@ -186,7 +187,7 @@ header {
 
 .location_icon {
     font-size: 18px;
-    width: 100%;
+    width: 14px;
     height: 18px;
     color: black;
 }
